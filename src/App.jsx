@@ -8,7 +8,7 @@ function App() {
     <div className="app-shell">
       <main className="hero-section">
         <section className="hero-copy">
-          <h1>horacio sierra perez</h1>
+          <h1>Horacio Sierra Perez</h1>
           <p className="eyebrow">developer · student · builder</p>
 
           <div className="hero-grid">
@@ -28,7 +28,7 @@ function App() {
 
               <div className="panel">
                 <p className="label">contact me</p>
-                <p>yourname@example.com</p>
+                <p>ho361339@ucf.edu</p>
                 <div className="links-row">
                   <a href="https://github.com/" target="_blank" rel="noreferrer">
                     GitHub
@@ -56,7 +56,7 @@ function App() {
               <div className="profile-card">
                 <div className="profile-image" />
                 <p className="profile-caption">profile image placeholder</p>
-                <a className="resume-button" href="/resume.pdf" target="_blank" rel="noreferrer">
+                <a className="resume-button" href="/Horacio-Sierra-Perez.pdf" target="_blank" rel="noreferrer">
                   Download Resume
                 </a>
               </div>

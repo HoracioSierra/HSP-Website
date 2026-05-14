@@ -214,32 +214,51 @@ h1 {
   margin: 0 0 10px;
 }
 
-.pixel-cat {
+.cat-pet {
   position: fixed;
-  left: 24px;
-  bottom: 24px;
-  width: 96px;
-  height: 96px;
-  background-image: url('/Cat Sprite Sheet.png');
-  background-size: 768px 960px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  image-rendering: pixelated;
+  left: 0;
+  bottom: 40px;
+  z-index: 9999;
   pointer-events: none;
-  z-index: 10;
-  animation: pixel-cat-walk 2.4s steps(8) infinite;
+  animation: catMove 26s linear infinite;
+  will-change: transform;
 }
 
-@keyframes pixel-cat-walk {
-  0% { background-position:    0px  0px; }
-  12.5% { background-position: -96px  0px; }
-  25% { background-position: -192px  0px; }
-  37.5% { background-position: -288px  0px; }
-  50% { background-position: -384px  0px; }
-  62.5% { background-position: -480px  0px; }
-  75% { background-position: -576px  0px; }
-  87.5% { background-position: -672px  0px; }
-  100% { background-position:    0px  0px; }
+.cat-scale {
+  width: 32px;
+  height: 32px;
+  transform: scale(3);
+  transform-origin: bottom left;
+}
+
+.pixel-cat {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  background-image: url('/Cat Sprite Sheet.png');
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  animation: catWalkFrames 0.9s steps(8) infinite;
+}
+
+@keyframes catMove {
+  from {
+    transform: translate3d(-80px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(calc(100vw + 80px), 0, 0);
+  }
+}
+
+@keyframes catWalkFrames {
+  from {
+    background-position: 0px -160px;
+  }
+
+  to {
+    background-position: -256px -160px;
+  }
 }
 
 .loading-dots {

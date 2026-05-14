@@ -1,7 +1,14 @@
 import React from 'react';
 
 function PixelCat() {
-  return <div className="pixel-cat" aria-hidden="true" />;
+  // Debug: show one static frame
+  return (
+    <div className="cat-pet">
+      <div className="cat-scale">
+        <div className="pixel-cat"></div>
+      </div>
+    </div>
+  );
 }
 
 export default PixelCat;
