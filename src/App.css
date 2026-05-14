@@ -217,17 +217,23 @@ h1 {
 .cat-pet {
   position: fixed;
   left: 0;
-  bottom: 40px;
+  top: 0;
   z-index: 9999;
   pointer-events: none;
-  animation: catMove 52s linear infinite;
   will-change: transform;
 }
 
 .cat-flip {
   width: 32px;
   height: 32px;
-  animation: catFlip 52s linear infinite;
+}
+
+.cat-flip.right {
+  transform: scaleX(1);
+}
+
+.cat-flip.left {
+  transform: scaleX(-1);
 }
 
 .cat-scale {
@@ -269,27 +275,7 @@ h1 {
   }
 }
 
-@keyframes catFlip {
-  0% {
-    transform: scaleX(1);
-  }
 
-  49% {
-    transform: scaleX(1);
-  }
-
-  50% {
-    transform: scaleX(-1);
-  }
-
-  99% {
-    transform: scaleX(-1);
-  }
-
-  100% {
-    transform: scaleX(1);
-  }
-}
 
 @keyframes catWalkFrames {
   from {
@@ -334,11 +320,11 @@ h1 {
 }
 
 .cat-scene.paused.jump .pixel-cat {
-  animation: catJump 0.8s steps(8) 1 forwards;
+  animation: catJump 0.8s steps(8) 1;
 }
 
 .cat-scene.paused.big-jump .pixel-cat {
-  animation: catBigJump 0.9s steps(7) 1 forwards;
+  animation: catBigJump 0.9s steps(7) 1;
 }
 
 @keyframes catBigJump {
@@ -422,7 +408,7 @@ h1 {
 }
 .cat-scene.paused.jump .cat-scale,
 .cat-scene.paused.big-jump .cat-scale {
-  animation: catBounce 0.8s ease-out 1 forwards;
+  animation: catBounce 0.8s ease-out 1 ;
 }
 
 @keyframes catBounce {
@@ -440,7 +426,7 @@ h1 {
 }
 
 .cat-scene.paused.big-jump .cat-scale {
-  animation: catBigBounce 0.9s ease-out 1 forwards;
+  animation: catBigBounce 0.9s ease-out 1 ;
 }
 
 @keyframes catBigBounce {
