@@ -37,5 +37,6 @@ A dark terminal-style developer portfolio built with Vite, React, and regular CS
 - Step 1: Initialize `.gitignore` and README
 - Step 2: Add Vite + React app scaffolding and homepage layout
 - Step 3: Add project cards, GitHub activity placeholder, and PixelCat still frame
-- Next: animate the PixelCat walking and polish the experience
+- Step 4: Animate the PixelCat walking frames
+- Next: make the PixelCat move across the screen and turn around
 
