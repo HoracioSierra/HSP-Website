@@ -310,15 +310,37 @@ h1 {
   }
 }
 .cat-scene.paused .cat-pet,
-.cat-scene.paused .cat-flip,
-.cat-scene.paused .pixel-cat {
+.cat-scene.paused .cat-flip {
   animation-play-state: paused;
 }
 
-.cat-scene.paused .pixel-cat {
+.cat-scene.paused.sit .pixel-cat {
   animation: catSitTail 0.8s steps(4) infinite;
 }
 
+.cat-scene.paused.sleep .pixel-cat {
+  animation: catSleep 1.2s steps(4) infinite;
+}
+
+@keyframes catSitTail {
+  from {
+    background-position: 0px 0px;
+  }
+
+  to {
+    background-position: -128px 0px;
+  }
+}
+
+@keyframes catSleep {
+  from {
+    background-position: 0px -192px;
+  }
+
+  to {
+    background-position: -128px -192px;
+  }
+}
 
 .loading-dots {
   display: inline-flex;
