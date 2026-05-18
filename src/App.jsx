@@ -58,7 +58,11 @@ function App() {
               <div className="profile-card">
                 <img className="profile-image" src="/profile.jpg" alt="Horacio Sierra Perez" />
                 <p className="profile-caption">Horacio Sierra Perez</p>
-                <a className="resume-button" href="/Horacio-Sierra-Perez.pdf"  target="_blank" rel="noreferrer" download>
+                <a
+                  className="resume-button"
+                  href="/Horacio-Sierra-Perez-Resume.pdf"
+                  download="Horacio-Sierra-Perez-Resume.pdf"
+                >
                   Download Resume
                 </a>
               </div>
