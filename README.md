@@ -27,10 +27,12 @@ A dark terminal-style developer portfolio built with Vite, React, and regular CS
 ## Planned features
 
 - Step-by-step pixel cat animation in `src/components/PixelCat.jsx`
-- Clickable project islands linking to GitHub repos
+- Flip-style project islands with GitHub links
 - Animated loading dots for "currently building something ..."
 - Resume download support via `public/resume.pdf`
 - Profile image placeholder from `public/profile.jpg`
+- GitHub activity section
+  
 
 ## Progress notes
 
@@ -38,5 +40,7 @@ A dark terminal-style developer portfolio built with Vite, React, and regular CS
 - Step 2: Add Vite + React app scaffolding and homepage layout
 - Step 3: Add project cards, GitHub activity placeholder, and PixelCat still frame
 - Step 4: Animate the PixelCat walking frames
-- Next: make the PixelCat move across the screen and turn around
+- Step 5: Add PixelCat movement, turning, pauses, and idle animations
+- Step 6: Polish project cards with flip-card interactions
+- Step 7: Add GitHub activity section
 
