@@ -16,14 +16,20 @@ function ProjectIsland({ project }) {
             <h3 className="project-name">{project.name}</h3>
           </div>
 
-          <a
-            className="learn-more-button"
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Learn More →
-          </a>
+          {project.link ? (
+            <a
+              className="learn-more-button"
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Learn More →
+            </a>
+          ) : (
+            <span className="learn-more-button disabled">
+              Private Repo
+            </span>
+          )}
         </div>
       </div>
     </article>

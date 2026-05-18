@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectIsland from './components/ProjectIsland';
 import PixelCat from './components/PixelCat';
 import projects from './data/projects';
+import GitHubActivity from "./components/GitHubActivity";
 
 
 function App() {
@@ -79,10 +80,7 @@ function App() {
           </div>
         </section>
 
-        <section className="activity-panel panel">
-          <p className="label">github activity</p>
-          <p>Recent project updates appear here. This section is optional-looking for now.</p>
-        </section>
+        <GitHubActivity />
       </main>
 
       <PixelCat />
